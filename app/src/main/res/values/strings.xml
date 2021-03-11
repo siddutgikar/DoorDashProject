@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Doordash</string>
+    <string name="no_internet_connection">No internet connection.</string>
+    <string name="popular_items">Popular Items</string>
+</resources>

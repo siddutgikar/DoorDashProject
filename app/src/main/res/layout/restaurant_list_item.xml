@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/custom_ripple_recycler_view"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/restaurant_cover_image_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.3"
+        tools:src="@android:drawable/ic_dialog_alert" />
+
+    <TextView
+        android:id="@+id/restaurant_name_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/restaurant_cover_image_view"
+        app:layout_constraintRight_toLeftOf="@+id/restaurant_price_range"
+        app:layout_constraintTop_toTopOf="@+id/restaurant_cover_image_view"
+        tools:text="DoorDash Restaurant Name" />
+
+    <TextView
+        android:id="@+id/restaurant_price_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:gravity="end|center_vertical"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/restaurant_cover_image_view"
+        tools:text="$$" />
+
+    <TextView
+        android:id="@+id/restaurant_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@+id/restaurant_cover_image_view"
+        app:layout_constraintRight_toLeftOf="@+id/restaurant_delivery_time"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_name_text_view"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/restaurant_delivery_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="end|center_vertical"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="$$" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
